@@ -1,0 +1,3 @@
+# ginore all logs
+*.log
+/0_ignore
