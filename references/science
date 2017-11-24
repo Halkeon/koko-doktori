@@ -1,0 +1,18 @@
+@article{Wagner20041579,
+title = "Molecular dynamics boundary conditions for regular crystal lattices",
+journal = "Computer Methods in Applied Mechanics and Engineering",
+volume = "193",
+number = "17–20",
+pages = "1579 - 1601",
+year = "2004",
+note = "<ce:title>Multiple Scale Methods for Nanoscale Mechanics and Materials</ce:title>",
+issn = "0045-7825",
+doi = "10.1016/j.cma.2003.12.012",
+url = "http://www.sciencedirect.com/science/article/pii/S0045782504000143",
+author = "Gregory J. Wagner and Eduard G. Karpov and Wing Kam Liu",
+keywords = "Molecular dynamics",
+keywords = "Boundary conditions",
+keywords = "Multiple scale simulations",
+keywords = "Generalized Langevin equation"
+}
+

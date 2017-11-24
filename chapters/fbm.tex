@@ -1,0 +1,310 @@
+\chapter{Szálköteg modell}
+\label{chapt:fbm}
+
+\begin{comment}
+A szálköteg modelles munkáról a következőket fogom leírni: Ábrákról még lövésem sincs....
+1. Motiváció
+2. Modell
+	- A modell kiterjesztése
+	- nevezetes mennyiségek... 
+	- a kiterjesztett modell
+3. Globális terhelés eloszlás
+	Egyik cikk alapján
+	- vizsgált mennyiségek, következtetés, eredmények
+	- az új univerzalitási osztály, speciális viselkedés észrevétele eloszlástól föggően
+	- lavinaeloszlás új eredménye, ennek analitikus meghatározása
+4. Lokális terhelés eloszlás
+	Másik cikk alapján
+	- kritikus viselkedés nagyon alacsony esetben
+	- példa a mikroszálas kompozitok esetében
+	- lavina eloszlások, skála eredmények vizsgálata 
+	- 
+\end{comment}
+
+
+\section{Motiváció}
+
+\section{Modell}
+\rhead{\itshape Szálkötegmodellek}
+\subsection{Száraz szálkötegmodell}
+\subsection{Szálkötegmodell kiterjesztése törhetetlen szálakkal}
+
+
+
+
+\par A rendezetlen anyagok törésének vizsgálatában régóta alkamazott eszköz a
+szálköteg modell. A modellt konstrukcióját elõször Peires \verb=\cite{peires1}=
+ismertette, amikor 1927-es munkájában gyapjú szálak teherbírását vizsgálta a
+segítségével. Az elsõ valószínûségszámítsilag korrekt leírást Daniels-nek
+\verb=\cite{daniels1}= köszönhetjük, aki a modell segítségével szálak kötegeinek
+átfogó vizsgálatát végezte el feltételezve, hogy az eltörõ szálak a
+terhelésüket minden éppen maradt szálra egyenletesen osztják tovább. Az
+irodalomban ezt ELS (Equal Load Sharing) néves ismerjük. Az elmúlt évtizedekben
+a különféle céloknak megfelelõen több kiegészítése is született a modellnek.
+Egy igen fontos kiegészítése a Colman által javasolt idõfüggés volt, ahol a
+szálak teherbírása az idõnek monoton csökkenõ függvénye. Ezzel a megközelítéssel
+fáradás és creep okozta törések is vizsgálhatók lettek.
+\par A szálköteg modellek két fontos a modellalkotással szemben támasztott
+kihívásnak is megfelenek. Egyrészt ha anyagok teherbírását, sérülékenységét
+szeretnénk vizsgálni, akkor olyan modellt kell alkotnunk ami elegendõen
+ralisztikus ahhoz, hogy segítségével kellõ részletességgel írhassuk le
+az anyag mikroszerkezetét, és lokális feszültségviszonyait. Ha sikerült ilyet
+alkotnunk akkor képesek lehetünk arra, hogy meghatározzuk a kapcsolatot
+az anyag mikroszkópikus paraméterei és makroszkópikusan mérhetõ
+jellemzõi között. Természetesen a realisztikusság mellet fontos, hogy a
+modell bizonyos feltételek mellett analitikusan is kezelhetõ legyen, és így a 
+segítségével kapott eredmények összevethetõk legyenek a
+statisztikus fizika eddigi fejezeteivel vagy beilleszthetõk legyenek az
+eddigi elméletekbe, különös tekintettel a kritikus
+jelenségek és a fázisátalakulások elméletére. 
+\par A szálköteg modellek mindkét 
+szempontból kitûnõ választásnak bizonyultak, mivel egyszerûségük ellenére
+jól megragadják a folyamatok legfontosabb jellemzõit és bizonyos határesetekben
+analitikus számításokra is haszálhatók.
+
+\section{A szálköteg modell megalkotása}
+\par Mint minden modell a szálköteg modell is különbözõ egyszerûsítõ
+feltételeket fogalmaz meg annak érdekében, hogy kezelhetõvé tegye a modellezni kívánt
+problémát. Ebben az esetben a következõ egyszerûsítõ feltevéseket tesszük:
+\subsection{Diszkretizáció}
+\par Ebben a modellben a rendezetlen anyagot szálak egy halmazának feleltetjük
+meg. Legyen a diszkretizációhoz használt szálak száma $N$, amit valamilyen
+reguláris rácson helyezünk el, mint pl.: háromszög-, vagy négyzetrácson. 
+Mivel a szálak ismert tulajdonsága, hogy csak húzófeszültség ébredhet bennük,
+ezért egy szálakból épített modellre általában csak a szálakkal párhuzamos
+terhelést helyezhetünk, de legalábbis csak a szálak irányába esõ komponens
+hatását vizsgálhatjuk.
+\subsection{Szálak törési törvénye}
+\par Mivel anyagok törését, vagy sérülését szeretnénk vizsgálni a modellünkel,
+ezért a diszkretizáció során meghatározott szálakat valamilyen módon el
+szeretnénk majd törni. Az egyszerû szálköteg modellben - mostantól DFBM (Dry
+Fiber Bundle Model)- a szálak a növekvõ külsõ terhelésre ridegen reagálnak, ami
+annyit jelent, hogy amennyiben a szálban ébredõ feszültség a deformációnak
+lineáris függvénye, akkor egy elõre meghatározott $\sigma_i^{th}$,
+$i=1,\ldots,N$ törési küszöb elérése után a szál eltörik és a rá esõ feszültség
+nullára esik. Ezt a kapcsolatot általában a
+\begin{equation}
+\label{equ:hook1}\varepsilon=\frac{\Delta l}{l},\ \varepsilon=\frac{1}{E}\sigma
+\end{equation} 
+lineáris Hook törvényel szokták leírni, ahol $\varepsilon$ a szál deformációja,
+$\sigma$ pedig a benne ébredõ feszültség. Az $E$ egy anyagi jellemzõktõl függõ
+konstans, az anyag Young modulusza. Ez a mennyiség határozza meg az anyagunk
+rugalmas tulajdonságait. Az $E$ értékét egységesen minden szálra azonosnak
+határozzuk meg. Az egyszerû DFBM-ben a szálak soha nem regenerálódnak, így ha
+valamelyik szál egyszer eltört, akkor törött is marad.
+\par A különféle kerámiák törési törvénye meglehetõsen jól egyezést mutat a 
+fenti \ref{equ:hook1} egyenlettel definiált Hook törvénnyel. A szálköteg
+modelleke ebbõl adódóan jól használhatók kerámiák sérülésének, törésének a
+vizsgálatára.
+\subsection{Terhelés elosztás}
+\par Miután a modell alkalmazása során a szálakat valamilyen módon el fogjuk
+törni, az általuk tartott terhelést valamilyen módon tovább kell osztani a még éppen
+maradt szálakra. Azt, hogy az éppen eltört szál terhelését milyen
+távolságon belül, és milyen módon osztom tovább, azt a terhelés osztás módja
+határozza meg. Az irodalomban fellelhetõ, ezzel a modellel elért eredmények
+jelentõs többségét két szélsõséges esetre határozták meg. Az egyik véglet a
+végtelen hatótávolságú kölcsönhatás, ami lényegében azt jelenti, hogy minden
+még épp szál azonos módon részesül a törött szál által tartott terhelésbõl. Ezt
+a szélsõséget nevezik az irodalomban globális (GLS - Global Load Sharing), 
+illetve egyenlõ terhelés elosztásnak (ELS - Equal Load Sharing), habár ez
+bizonyos esetekben nem azonos a GLS-el. A másik véglet esetén a kölcsönhatás
+hatótávolsága annyira rövid, hogy csak a közvetlen még épp szomszédok kapnak a
+szál által tartott terhelésbõl. A közvetlen szomszéd jelentése rácsfüggõ,
+négyzetrács esetén a klasszikus Neumann-szomszédságot értjük alatta.
+\par A globális eset a szálköteg modell átlagtérközelítésének felel meg,  ami a
+jellemzõk analitikus meghatározására ad lehetõséget. A globális kölcsönhatás
+tulajdonképpen irrelevánsá teszi a topológiát 
+\par Mivel LLS esetén a lokalitás miatt kilakulhatnak nemtriviális térbeli
+korrelációk, ezért ennek a végletnek az analitikus vizsgálata csak ritkán 
+valósítható meg. A legtöbb LLS-el kapcsolatos eredmény nagyszámú számítógépes
+szimuláción alapszik.
+\par A fentiek tükrében egy bonyolultabb probléma esetében
+is érdemes elõször a GLS megközelítéssel kezdeni a vizsgálatot, mert a szálköteg legfontosabb
+jellemzõ mennyiségeit zárt analitikus alakban határozhatjuk meg vele.
+\subsection{Rendezetlenség a modellben}
+\par A szálköteg modelleket rendezetlen anyagok vizsgálatára használjuk,
+felmerül tehát a kérdés, hogy a rendezetlenség milyen módon jelenik meg a modellben. A
+topológiát a kezelhetõség miatt általában négyzet, vagy hasonlóan szabályos
+szerkezetû rácson valósítjuk meg, és mivel a szálak rugalmas jellemzõjét az $E$
+Young-moduluszt egységesen egyformának határoztuk meg, nem marad más
+lehetõségünk, minthogy a szálak törési küszöbei legyenek a rendezetlenség
+hordozói. 
+\par Az egyes szálak eltöréséhez szükséges $\sigma_i^{th}$ lokális terhelések
+értékei egy elõre definiált $p(\sigma^{th})$ valószínûségi sûrûség  és
+$P(\sigma^{th})=\int_{\sigma^{th}_min}^{\sigma^{th}_max} p(x) dx$ kumulatív
+eloszlás függvényt követnek. A törési küszöbök rendezetlenségének mértéke
+határozza meg a modellezni kívánt anyag, rendszer rendezetlenségének a mértékét.
+\par A legtöbb esetben a vizsgálatot érdemes az analitikusan kezelhetõ $0$ és
+$1$ közötti egyenletes eloszlással kezdeni, aminek a sûrûség és eloszlás
+függvénye
+\begin{equation}
+\label{equ:uniform1}
+p(\sigma^{th})=1,\ \ \ P(\sigma^{th})=\sigma^{th}
+\end{equation}
+alakban adódik. Egy másik széles körben alkalmazott eloszlás az FBM modellekben
+a kétparaméteres Weibull eloszlás, amit a
+\begin{equation}
+\label{equ:weibull1}
+P(\sigma^{th})=1-exp\left[-\left(\frac{\sigma^{th}}{\lambda}\right)^m\right]
+\end{equation}
+eloszlásfüggvény jellemez. Az $m$-et Weibull indexnek, a $\lambda$-t skála
+paraméternek nevezzük. Ennek az eloszlásnak a vizsgált probléma szempontjából
+két fontos elõnye is van. Egyrészt a tapasztalatok szerint
+megfelelõ paraméterek mellett viszonylag reálisan írja le a vizsgált
+anyagok terheléseloszlás viszonyait, másrészt egyetlen paraméter, az $m$
+segítségével állítható az aktuális módszerben a rendezetlenség mértéke. A
+gyakorlatban elõforduló anyagok esetén az $m$ paraméter értéke $2$ és $10$ közé
+szokott esni, ahol a kisebb szám a nagyobb rendezetlenséget jelöli. 
+
+
+
+
+Univerzalitási osztályok szignifikánsan különbözo szálak keverésével eloállított szállkötegekben
+
+Anyagok külso terhelés hatására történo törése vagy sérülése a tudomány egy nagyon érdekes és izgalmas
+területe, amelynek eredményeit széleskörben alkalmazzák a megvalósuló technológiák esetében.
+
+Az elmúlt két évtized során a statisztikus fizika eszköztárának alkalmazásával a mérnökök és fizikusok
+betekintést nyerhettek az anyagok törése mögött rejlo folyamatokba. A kutatások eredményeként kiderült,
+hogy a törési folyamatokat nagyban befolyásolja az anyagok belso szerkezetének heterogenitása illetve
+ezen heterogeneitások hasonlósága, illetve különbözosége.
+A közelmúltban több különbözo sztochasztikus törési modellt is alkottak az anyagok szerkezetében tapasztalható
+rendezetlenség hatásainak a megismerésére. Ilyen a szállkötegmodell is - (Fiber Bundle Model) a továbbiakban FBM -
+illetve különféle biztosítékok, rugók rácsmodelljei.
+Ezeket a modelleket felhasználva a tudományos közösség számtalan numerikus szimuláció és analitikus
+vizsgálat segítéségével kapcsolatot talált a rendezetlen anyagok makroszkópikus törése és a fázisátalakulások
+és kritikus jelenségek elmélete között, amelyek számos univerzális tulajdonsággal rendelkeznek a vizsgált
+anyag konkrét anyagi jellmzoitol függetlenül. Az egyik ilyen fontos felismerés az volt, hogy lassan növekvo
+külso terhelés hatására bekövetkezo makroszkópikus törést úgynevezett hirtelen löketekben jelentkezo jelenségek
+elore jelezhetik, amelyeket a lokális törések lépcsozetes természetére lehet visszavezetni. 
+
+Példám
+Ezt a viselkedést
+jól szemlélteti a következo gondolatkísérlet. Helyezzünk el kölönbözo vastagságú nejlonzacskókat egymás
+alá, ez a különbözo vastagság szemlélteti az anyagok mikroszerkezetének rendezetlenségét. Ezután helyezünk egy adott
+tömegu testet a legfelso nejlonra. Tegyük fel hogy ez a test olyan, hogy távirányítással növelhetjük a tömegét.
+Ennek a gyakorlati megvalósítását a mérnökökre bízom. Tehát addig növeljük finoman a tömegét ennek a testnek amíg át nem 
+szakítja a felso nejlont. Amennyiben az alatte lévo nejlon erosebb mint amit korábban átszakítottunk, akkor ez megfogja
+a testet és így azt újra növelnünk kell, azonban az is elofordulhat hogy a következp nejlon gyengébb így a test átzuhan rajta
+majd a következon, amíg el nem érünk egy erosebbhez. Ahogy növeljük a tömeget a folyamatosan átszakított nejlonok száma
+átlagosan egyre több lesz. Ha valamilyen módszerrel ezeknek a folyamatos zuhanásoknak az idejét mérni tudnánk
+(a valóságban a mérés tárgya nem feltétlenül ido dimenziójú) akkor ismerve az elméletbol hogy a kritikus jelenség elott
+a mér mennyiségünk maximummal rendelkezik, akkor elojelezhetjük ezt. cite{3-4}
+
+Mivel általában ezeket a löketeket kísérletileg is mérni lehet például az akusztikus emisszión alapuló technikákkal (mi az az 
+akusztikus emisszió?) ezek a jelnség elojelzo markerek lehetoséget adnak a jelenség elojelzésére. A "löketek" eloszlása
+analtikusan bizonyított, hogy hatvány függvény alakú - amit a szimulációk és kísérletek is alátámasztottak - méghozzás
+a jelenségek széles körét tekintve állandó exponenssel. cite Az azonos exponenssel rendelkezo jelenségek egy úgynevezett 
+univerzalitási osztályt alkotnak. 
+
+A közelmúltban az univerzalitási olytályok robosztusságát több munka is vizsgálta olyan esetekben amikor az anyagok rendezetlenségét
+jellemzo különbözo eloszlásokat keverték egymással, illetve egy másik esetben az eloszlás azonos volt, de az egyik eloszlást eltolták 
+a másikhoz képest. Változást a löketek eloszlásában azonban csak akkor sikerült elérni amennyiben egy véges alsó határt szabtak meg a 
+az eloszlásban lásd cite. Növelve az alsó küszöböt az eloszlás exponense megváltozik. Egy átmenetnek lehetünk tanui ami az 5/2-es 
+exponens átmegy egy alacsonyabb 3/2-be.
+
+Divakaran és Dutta megvizsgálták egy olyan FBM kritikus viselkedését amelyikben a szálak terhelés határai két egymáshoz képest eltolt
+egyenletes eloszlásból származtak. Az általunk vizsgált rendszert úgy is interpretálhatjuk mint a Divakaran féle modell kiterjesztését
+egy végtelen távolságú eloszlásokra gapu/résu. Azt egyébként elégséges megszabnunk feltételnek, hogy az erosebb szálak közül a leggyengébb
+szállnak is erosebbnek kell lennie, mint az összes gyenge szállnak együttvéve.
+
+Ebben a munkában megvizsgáljuk az anyagban megjeleno eros heterogenitás hatását a törés folyamatára. Feltételezzük, hogy a rendszer 
+két komponensbol épül fel. Az egyik komponenst egy ero eloszlással jellemezhetjük, míg a másik komponenst törhetetlennek tekintjük.
+Változtatva a két komponens $\alpha$ arányát globális terhelés eloszlás mellett (Global Load Sharing továbbiakban GLS), megmutatjuk analitikus
+eszközökkel, hogy a törhetetlen elemeknek jelentos hatása van a rendszer viselkedésére mind a mikor és makro méretek területén.
+Érdekes módon találtunk egy kritkus $\alpha_c$ keverési arányt amely mellet két különbözo tartomány között átmenet valósul meg. Azon
+ $\alpha$ értékek esetén amelyek az említett $\alpha_c$-nél kisebbek, a makroszkópikus viselkedést leíró konstitutív görbe egy
+ maximummal rendelkezik. a burst méret eloszlás hatványfüggvény eloszlású méghozzá az irodalomból ismert $\tau=5/2$-es  kitevovel.
+Amennyiben az arány meghaladja $\alpha_c$-t a makroszkópikus válasz monoton növekvové válik és a burst méret eloszlás pedig
+habár most is hatványfüggvény lesz de az exponens az átlagtér megoldás $5/2$ értékérol $\tau=9/4$-re vált. A makroszkópikus válasz
+analitikus vizsgálatával megmutatjuk, hogy az átmenet olyan eloszlások esetén valósul meg, amelyek egy pontosan egy maximummal
+ és egy inflexiós ponttal rendelkeznek, s így egy új univerzalitási osztályt alkotnak a breakdown jelenségben???...
+ 
+ Modell:
+ Az FBM modell esetén a modell rendszerünk N szállból áll amelyeket a szálak irányával párhuzamosan terhelünk. Egy $\sigma_0$ külso
+ terhelés hatására a szállak lineárisan elasztikus választ adnak. Minden szállat azonos E=1 Young modulusszal jellemzünk.
+ A jelentos heterogenitás modellezéséhez feltételezzük, hogy a szállköteget két erosségében jelentosen különbözo
+ száll alkotja, A szállak egy $0\leq\alpha\leq 1$ hányadát "erosnek" tekintjük, ami annyit jelent, hogy ezek a szállak törhetetlenek.
+ A maradék $1-\alpha$ hányada "gyenge" száll, ami annyit tesz, hogy eltörnek amennyiben az egyes szálakon fellépo $\sigma$ feszültség
+ meghaladja az adott száll $\sigma_{th}^i, i=1..N_w$ teherbíróképességét, ahol $N_w=N*(1-\alpha)$. A gyenge szállak teherbíróképessége
+ egy $p(\sigma_{th})$ suruség és $P(\sigma_{th})$ eloszlásfüggvény által jellemzett eloszlást követ. 
+ Miután egy gyenge száll eltörik, az addig rajta lévo terhelést szét kell osztani a még épp szállakra. Az egyszeruség és analitikai
+ kezelhetoség miatt egyenlo terhelés eloszlást feltételeztünk ami egy végtelen hatótávolságú kölcsönhatásnak felel meg, s ez annyit jelent,
+ hogy minden száll a teljes terhelési szimuláció alatt azonos terhet visel és így nem tapasztalunk növekvo feszültségkoncentrációt a
+ sérült részek környezetében.
+ 
+ Ilyen feltételek mellett a rendszer makroszkópikus viselkedését leíró konstitutív egyenlet a következo alakot veszi fel:
+ 
+\beq
+\label{equ:consti}
+\sigma_0=(1-\alpha)[1-P(\sigma)]\sigma+\alpha\sigma
+\eeq
+ 
+ Ezt az egyenletet más alakba is írhatjuk, ami ..... A $\sigma_0$ érték az átlagos külso terhelés a rendszeren, míg a $\sigma$
+ az egyes szálakon fellépo feszültség ami a szálak aktuális $\epsilon$  fajlagos megnyúlásával a következo kapcsolatban áll
+ $\sigma=E\epsilon$
+ 
+ Az xy egyenlet elso kifejezése a még épp gyenge szállak által viselt terhelésért felelos, az egyenlet második tagja pedig 
+ a törthetetlen szállakon lévo terhelést jelenti. A következo számításokat két különbözo terhelés eloszlásra is kiszámítottuk.
+ A két vizsgált eloszlás az egyenletes és a Weibull a megfelelo $P(\sigma)=\sigma$ és $P(\sigma)=1-exp[-(\sigma/\Lambda)^m]$.
+ 
+ Az xy ábrán látható a rendszer konstitutív viselkedése a két vizsgált eloszlás esetében. Az $\alpha=0$ esetben visszakapjuk a szállkötegmodell
+ irodalomból jól ismert megoldásait. Az FBM modell klasszikus megoldásai általában pontosan egy parabólikus maximummal rendelkeznek mind
+ az egyenletes mind a weibull eloszlás esetén. A görbék maximum helye egy kritikus $\epsilon_c=1/E\sigma_c$ deformációt és 
+ egy kritikus $\sigma_0^{c}(\sigma_c)$ terheléshatárt definiál. A rendszer katasztrófikus eseményen megy keresztül amikor eléri
+ ezeket a kritikus értékeket.
+ Nem zérus $\alpha$ értékek esetén kelloen nagy $\sigma$ terhelés esetén minden gyenge száll eltörik és így az akármilyen egyenlet elso tagja 
+ nulla lesz és így a makroszkópikus választ tisztán a törhetetlen szállak által tartott terhelés képviseli, amit az xy ábrán
+ abból is láthatunk, hogy minden konstitutív görbe nem nulla $\alpha$ esetén egy $E\cdot\alpha$ meredekségu egyeneshez tart.
+ Ha alaposabban megvizsgáljuk az ábrát észrevehetjük, hogy alacsonyabb $\alpha$ értékek esetén a $\sigma_0{\sigma}$ görbe lokális maximuma
+ továbbra is megfigyelheto, azonban növekvo $\alpha$ értékekkel a $\sigma_c(\alpha)$ helye és $\sigma_0^c{\alpha}$ értéke monton növekszik.
+ Ha tovább vizsgáljuk a görbék viselkedését észrevehetjük, hogy egy jól definiálható $\alpha_c$ értéknél nagyobb $\alpha$ értékek
+ esetén eltünk a lokális maximum és a konstitutív görbe monton növekvové válik, azaz $\sigma_0/d\sigma>0$. A maximum helyét egyszeruen meghatározhatjuk
+ a $\frac{d\sigma_0}{s\sigma}|_{{\sigma_c}=0}$ egyenlet eredményeként. Ennek az eredménye a következonek adódik:
+
+\beq
+\label{equ:consti2}
+\frac{1}{1-\alpha}=P(\sigma_c)+\sigma_c p(\sigma_c).
+\eeq
+
+ 
+ Ha a fenti egyenletet $\sigma_c$-re mint $\alpha$ függvényére megoldva a $\sigma_0^c$ a maximum hely értéke egyszeruen adódik ha a meghatározott
+ $\sigma_c(\alpha)$ értéket az xy(alap const egy) egyenletbe helyettesítjük be.
+ 
+ Mivel a $\sigma_0(\sigma)$ konstitutív egyenlet deriváltjának a $\sigma_{in}$ inflexiós pontban minimuma van ezért az xy(1/1-alpha) egyenletnek maximuma
+ lesz $\sigma_c=\sigma_{in}$ inflexiós pontban. Ebbol következik hogy a második egyenlet csak addig oldható meg $\sigma_c(\alpha)$ értékre
+ amíg $\alpha\leq\alpha_c$, ahol $\alpha_c$-t a $\sigma_c$ segítségével úgy definiáljuk mint azt az $\alpha$ értéket ami mellett a konstitutiv görbe
+ inflexiós pontja és maximumhelye egybeesik, azaz $\sigma_c(\alpha_c)=\sigma_{in}$. Ahhoz, hogy ezt használhassuk be kell látnunk, hogy az inflexiós pont helye
+ független $\alpha$ értékétol. Ez azonban könnyen belátható ha megtekintjük a constitutiv görbe második deriváltját ami a következőnek adódik:
+ 
+\begin{equation}
+\label{equ:consti_derivalt}
+ \frac{\partial^2\sigma_0}{\partial\sigma^2}|_{\sigma_c}=-(1-\alpha)[2p(\sigma)+\sigma p'(\sigma)].
+\end{equation}
+ 
+ A Weibull eloszlás esetén a $\sigma_c(\alpha)$ függvényt nem lehet zárt alakban meghatározni, azonban két $\alpha$ érték $\alpha=0$ és $\alpha=\alpha_c$ esetén egyértelmuen
+ meghatározhatjuk $\sigma_c$ értékét. A számítások eredménye $\alpha=0$ esetén a következonek adódik
+ 
+\beq
+\sigma_c(\alpha=0)=\Lambda(1/m)^(1/m),
+\eeq
+ 
+ míg $\alpha=\alpha_c$ esetén amikor a maximum hely egybe esik az infelxiós hellyel a következő eredményt kapjuk:
+ 
+\beq
+\label{equ:inflex}
+	\sigma_{in}=\Lambda[(1+m)/m]^{1/m},
+\eeq
+
+ MEGJEGYZÉS: szerintem ezeket a képleteket bővebben is kifejthetném... sztem
+ 
+ Ezután az $\alpha_c$ értéket úgy kaphatjuk, hogyha a fenti eredményeket behelyettesítjük a konstitutív görbe eredeti xy egyenletébe, ami a következőnek adódik
+ 
+\beq
+\label{equ:consti3} 
+\alpha_c=m\exp{-(1+m)/m}/[1+m\exp{-(1+m)/m}]
+\eeq
+
+
+\section*{Jegyzetek az fbm hez}
+Az LLS esetben az átlagos klaszterméretnek maximuma van és ennek van maximum helye, maximum értéke ... ezeket az értékeket egész pontosan meghatározhatjuk A Stauffer Scaling theory of percolation-ben a leírtak alapján 11.oldal numerical methods....

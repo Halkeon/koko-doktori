@@ -1,3 +1,9 @@
 # ginore all logs
 *.log
 /0_ignore
+/*
+!/*.tex
+!/*.pdf
+!/chapters
+!/references
+!/*.sty

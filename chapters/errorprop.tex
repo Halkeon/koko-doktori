@@ -1,0 +1,12 @@
+\chapter{Hiba terjedés}
+
+Adott egy $f(x,y)$ függvény ahol az $x$ és $y$ paraméterek a $\sigma_x$ és $\sigma_y$ hibával terheltek. 
+
+Definiáljuk egy mintavétel eredményeként adódó $u$ valószínűségi változó szórásnégyzetét a hagyományos módon:
+\beq
+\label{equ:error-szoras}
+\sigma^2 u=E\left[\left(u-\ol{u} \right)^2 \right] 
+\eeq
+\beq
+u-\ol{u}=(x-\ol{x})\frac{\partial f}{\partial x}\bigg|_{\ol{x}}+(y-\ol{y})\frac{\partial f}{\partial y}\bigg|_{\ol{y}}+\dots
+\eeq

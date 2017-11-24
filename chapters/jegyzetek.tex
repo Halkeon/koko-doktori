@@ -1,0 +1,363 @@
+\chapter{Jegyzetek}
+
+\section{Rendezetlenség}
+Amennyiben tisztán az anyagok elvi rácsszerkezete alapján határozzuk meg az egyes anyagok mechanikai tulajdonságait, arra a meglepő eredményre jutunk, hogy a valóságban elvégzett terheléses vizsgálatok során akár 2-3 nagyságrenddel gyengébbnek találjuk az adott anyagot. 
+Ennek a jelenségnek több oka is lehet. Okozhatja egyszerűen az a tény, hogy tökéletes tisztaságú anyagot előállítani igen nehéz, és ezek a szennyeződések negatívan befolyásolhatják a teherbírást, habár mint azt a napjainkban igen intenzív kutatási terület (coating, stb valami referenciát találni) mutatja, az egyes szennyező anyagok segítségével igen kedvezően alakíthatjuk bizonyos anyagok mechanikai, hőtűrő, víztaszító, stb tulajdonságait (példák kellenek, különben semmi értelme).
+A szennyező anyagok mellett az adott anyag rácsszerkezetében előforduló rácshibák, például vakanciák az okai az elméleti eredménytől való jelentős eltérésnek. 
+	
+A rendezetlen anyagok családjába tartozik a???? példa, példa, példa, referenciával. Az anyagban rejlő rendezetlenség, erősebb gyengébb részek keveredése a hasznunkra is válhat, hadd mutassam meg egy példán keresztül.
+
+Amennyiben az anyagok tökéletes rácsszerkezetűek lennének, akkor amennyiben az egy adott elemükre eső terhelés meghaladná annak a terhelési küszöbét, (nagyon gyors futtatás, az elérhető maximális terhelésre különböző weibull értékeke mellett, szerintem érdemes lesz ide plotolni).
+
+\section{Kritikus jelenségek}
+A kritikus jelenségek fontossága abban rejlik, hogy sok meglepően különböző rendszer viselkedik a kritikus pont közelében nagyon hasonlóan, hogy mi az a kritikus pont. Erre remek példa egy .
+
+A kritikus pont, kritikus jelenségek összekapcsolódnak a fázisátalakulásokkal. Fázisátalakulás akkor következik be amikor a rendszer valamilyen jellemzők alapján megadható állapotból egy adott pontban egy másikba billen át, vagy folytonosan átmegy. 
+
+A leghétköznapibb fázisátalakulás, a halmazállapot változás. Például amikor a víz megfagy, vagy elpárolog. Ennek a jelenségnek az általánosítása a fázisátalakulások elmélete.
+Fázisátalakulás során mindig kijelölünk egy rend- és egy kontrollparamétert. Rendparaméternek egy olyan rendszerjellemzőt választunk aminek az értéke zérus a kontrollparaméter egy speciális úgynevezett kritikus értéke alatt. Míg felette valamilyen véges értéket vesz fel.
+
+A víz esetén kontrollparaméternek választhatjuk a $T$ hőmérsékletet, aminek függvényében a fázisátalakulást megfigyelhetjük. Persze a legtöbb rendszert nem egyetlen paraméter határoz meg, ezért több paraméter által meghatározott fázistérben egy fázisvonal, vagy magasabb dimenzióban egy fázis sík választja el a rendszer külünböző fázisait. (ábra a víz fázis ábrájáról...)
+
+
+Most, hogy az alapokat tisztáztuk, vizgsáljuk meg hogy ezek ismeretében mit nevezünk kritikus jelenségnek és milyen kapcsolatban van ez a fázisátalakulással az univerzalitással,  
+
+\section{Perkoláció fázisátalakulások és kritikus jelenségek}
+A perkoláció elméletével kb tisztában vagyok. Jelenlegi ismereteink alapján perkoláció esetében pontosan egy átkötő klaszter létezik ha létezik, ez csak kellőképpen nagy rendszer esetén igaz. A most következő megállapítások csak termodinamikai határesetben érvényesek (azaz kvázi végtelen rendszer esetén). A fenti ismeretek alapján feltételezzük, hogy van egy jól definiálható $p_c$ kritikus betöltési valószínűség ami felett létezik egy átkötő klaszter míg ez alatt nem létezik. Ebben az értelemben a perkoláció is fázisátalakulás. A betöltési valségnek a víz esetében a hőmérséklet felel meg míg a fázis alatt most arról van szó, hogy a rendszer két jól elkülöníthető állapotban van.
+Hogy ezt számokkal pontosabban leírhassuk bevezetjük a $P_{\infty}$ mennyiséget ami annak a valószínűségét adja meg, hogy a rendszer egy telített rácspontja az átkötő klaszterhez tartozik-e. A $P_{\infty}$ értéke a $p_c$ kritikus érték alatt eltűnik, míg felette véges nem zérus értéket vesz fel. 
+A kritikus ponthoz közel definiálhatunk egy úgynevezett {\bf $\beta$ kritikus exponenst} amiről azt feltételezzük, hogy közel a kritikus érték felett a következő tulajdonság teljesül: $P_{\infty} \sim (p-p_c)^{\beta}$
+
+A perkolációra a szokásos olajos példán túl példa még az úgynevezett véletlen biztosíték hálózat ahol a perkolációs probléma helyett az egyes rácspontokat vezető illetve szigetelő darabok kötik össze. Abban az esetben folyik mérhető árammennyiség a két oldal között, amennyiben van átkötő klasztere a vezető daraboknak. Egyszerűen reprodukálható műanyag és rézzel bevont műanyag golyók keverékével egy a falain szigetelő tartályban.
+
+Ennyi példa elég is.
+
+\subsection*{Fázisátalakulások}
+
+Ehrenfest féle osztályozás alapján, a termodinamikai potenciál adott deriváltjainak viselkedése alapján osztályozhatjuk a fázisátalakulásokat...
+Napjainkban ritkábban használt az azóta megismert tények miatt, például a másodrendű fázisátalakulás esetén a másodrendű deriváltak nem ugrást szenvednek, hanem divergálnak ami kifejezi a termodinamikai határeset fontosságát és lehetőséget az a kritikus exponensek bevezetésére.... 
+
+++++++++++++++++++++++++++++++++++++
+{\bf Alapelemek...}
+Egy fázisátalakulás szempontjából vizsgált rendszernek a következő jellemzői vannak:
+dimenzió, a rendszert leíró termodinamikai potenciál (Hamilton függvény típusú)
+
+{\bf Összefoglalva...}
+Fázisátalakulás d=1 dimenzióban nem jöhet létre amennyiben végtelen a rendszer és véges a kcshk hatótávolsága...d=2 esetén HTR végtelen rendszer és rövid távú kcsh esetén nem jöhet létre (egynél több független komponens esetében )
+
+
+++++++++++++++++++++++++++++++++++++
+
+
+A fázisátalakulással járó kritikus jelenségeket jól jellemezhetjük az úgynevezett kritikus exponensekkel. Ezek az exponensek azt adják meg, hogy a kritikus pont közelében bizonyos a rendszer szempontjából fontos mennyiségek, hogyan változnak ahogy közeledünk a kritikus ponthoz. Az egyes jelenségek között analógiákat húzhatunk így azonos elnevezést használhatunk az analóg mennyiségek exponenseire. Ezzel el is érkeztünk az univerzalitás fogalmához, ugyanis a tapasztalatok azt mutatják, hogy jelenségek egy jelentős családja azonos kritikus exponensekkel jellemezhető. Más szóval egy univerzalitási osztályba tartoznak. Ennek a gyakorlati jelentősége az, hogy a jelenségek közötti látszólagos különbségek ellenére a háttérben működő fizika mégiscsak azonos (na ez a mondat nyilván hülyeség így), a gyakorlati jelentősége igazából az, hogy az azonos univerzalitási osztályba tartozó jelenségekre az egyik rendszerre megfogalmazott állítások alkalmazhatók a másik rendszer esetében. Ennek a gyakorlati haszna, hogy ennek segítségével nagyon bonyolult, nehezen vizsgálható rendszerek amennyiben visszavezethetők sokkal egyszerűbb azonos univerzalitási osztályba tartozó jelenségekre, mégis vizsgálhatókká válnak. 
+
+Erre példa??? Jó lenne ha tudnék, vagy legalább referenciákat....
+(A fázisátalakulások kvantitatív jellemzéséhez a termodinamikai potenciál meghatározására van szükség ami azonban az esetek jelentős részében nem megoldható feladat, ezért hasznos technika a renormalizálás vagy az univerzalitás kihasználása)
+
+{\bf Rendparaméter:} Landau nyomán hívjuk rendparaméternek a $\Delta$ $i_n$ komponensű vektormennyiséget
+\begin{equation}
+\Delta  
+	\begin{cases}
+		= 0, \mbox{az 1-es rendezetlen fázis}\\
+	  \neq 0, & \mbox{a 2-es rendezetlen fázis}
+	\end{cases}
+\end{equation}
+Maga a $\Delta$ folytonos a fázisátalakulási görbe mentén.
+
+(Homogén függvény $f(\Lambda r)=g(\Lambda)f(r)$  Matematikailag következik, hogy ilyen függvény esetén két skalár egymás utáni alkalmazása azok egyszeri alkalmazásával egyenlő, azaz $g(\Lambda)g(\mu)=g(\Lambda\mu)$ ez viszont csak akkor igaz, ha a $g$ hatványfüggvény, ahol a kitevőt a homogenitás fokának hívjuk. A fentieket alkalmazhatjuk többváltozós függvényre is, ekkor $f(\Lambda x, \Lambda y)=\Lambda^p f(x,y)$. Ennek az általánosítása az, ha az egyes változókhoz tartozó együttható különböző hatványon van, azaz $f(\Lambda^a x, \Lambda^b y)=\Lambda^p f(x,y)$.
+
+A termodinamikai potenciál rendelkezik ezzel az általánosított homogenitás tulajdonsággal. (végső alakban a $\Lambda^p -> \Lambda '$ majd a $\Lambda ' -> \Lambda$ átjelölésével a következő alakot kaphatjuk: $f(\Lambda^{\hat a} x, \Lambda^{\hat b} y)=\Lambda f(x,y)$).
+
+{\bf Skálatörvények } A skálatörvények az egyes kritikus exponensek között adják meg a fennálló összefüggéseket.  A termodinamikai potenciálban szerepel a $\Lambda$ paraméter és két független skalár $a_t a_h$. Habár ezeket nem egyértelműen meghatározhatók, de a jelenlétüknek köszönhetően az egyes kritikus exponensek között összefüggések fogalmazhatók meg, ezeket nevezzük skálatörvényeknek. Minden exponense kifejezhető a fenti két független paraméterrel, amiből következik, hogy a kritikus exponensek közül csak kettő független. Minden olyan mennyiséget ami nemanalitikusan viselkedhet egy kritikus pont közelében egy kritikus exponenssel jellemzünk.
+
+{\bf egy kis matematikai bizbasz... }
+Szóval a Taylor sor hatványfüggvények speciális alakú függvény sora.
+
+A Taylor sorok határértékben általában előállítanak bonyolultabb függvényeket.
+
+Amennyiben egy függvényt a Taylor sorával írunk fel, akkor azt mondjuk, hogy a függvényt hatványsorba fejtjük.
+
+Ide kapcsolódik a valós analitikus függvény fogalma, ami annyi csupán, hogy egy $(a,b)$ intervallumon a függvényt analitikusnak nevezzük, amennyiben azt maradéktalanul előállítja a taylor sora....
+
+Kritikus exponensek: $\nu$ a korrelációs hosszt jellemző kritikus exponens. Amennyiben a rendszer a kritikus pont közelében van, akkor az előforduló korrelációk a végtelenbe tartanak. $\xi \sim t^{-\nu}$, ahol $t=(T-T_c)/T_c$. (Skálatörvények Widom és Domb munkái alapján, skálahipotézis...)
+
+\subsection{Univerzalitás}
+
+A hatványfüggvények skála invarianciája egy folytonos tulajdonság. A fázisátalakulások általában olyan folyamatok amelyek hatványfüggvény viselkedést generálnak, azaz a rendszer valamilyen jellemzője hatványfüggvény viselkedést mutat a kritikus pont közelében. A kritikus pont a rendszer kontroll paraméterének az a speciális értéke ahol, a rendszer rendparamétere 0-tól kölönböző értéket vesz fel. A rend paramétert úgy szokás meghatározni, hogy a kritikus érték alatt 0 legyen az értéke.
+
+Az univerzalitás azt jelenti, hogy látszólag teljesen különböző rendszerek dinamikája között is párhuzamot találunk amennyiben teljesülnek azok a feltételek, hogy ezen rendszerek fázisátalakulás esetén azonos kritikus exponensekkel rendelkeznek. Azonos kritikus exponensekkel jellemezhető rendszerek - azaz a kritikus pont közelében azonos skála tulajdonságokkal rendelkeznek - esetén a renormálási csoportok elméletének alkalmazásával belátható, hogy ezeknek a rendszereknek a hátterében azonos erők dolgoznak. Például a víz és a $CO_2$ azonos kritikus exponensekkel rendelkeznek a forráspontjuk közelében. Igazából a legtöbb anyagot be lehet osztani néhány univerzalitási osztályba. Ha minden igaz kezdetben azt hitték, hogy mindene gáz ugyanabba az univerzalitás osztályba tartozik.
+
+
+\section{Matematika}
+
+Használt mérték: MD - Mean Deviation. Átlagos szórás. Az átlagos szórás képlete:
+\begin{equation}
+	\text{MD}=\sum\limits_{i=1}^{N}P_i\vert x_i-\overline{x}\vert
+\end{equation}
+
+\subsection{Taylor Sor}
+A matematikában és a fizikában gyakran használjuk olyan egyenletek közelítő megoldására, amelyeknek nem létezik zárt alakja, azaz nem létezik olyan alak amleyben az integrál, vagy szumma jel eltüntethető. 
+
+A Taylor sorba fejtés Taylor tétele miatt fontos, mivel így közelítő formában szá
+
+$f(x)=f(p)+\frac{f'(p)}{1!}$
+
+\section{Szálköteg modellek háttér cikkek}
+\subsection{Peirce cikkek}
+Peirce az 1920-as években átfogó vizsgálatok keretében vizsgálta meg a pamut szálak viselkedését, cikksorozatában pontos leírást adott a használt kísérleti módszerekről, gépekről. 
+1./
+
+Messzemenőkig alapos mechanikai vizsgálatai során igyekezett figyelembe venni mindazokat a tényezőket amelyek   Az eredményeit a későbbiekben Daniels??? használta fel aki akkor az eredmények és Weibull munkásságának ismeretében 
+megalapozta a szálkötegmodellek alapjait.
+
+
+\begin{verbatim}
+
+
+
+\simeq
+\sim
+\cong
+
+http://w2.syronex.com/jmr/tex/texsym.old.html
+
+Cikkeim cime:
+
+	Avalanche dynamics of fiber bundles  (Phys Rev. E Vol. 80 2009)
+	Critical ruptures in a bundle of slowly relaxing fibers (Phys Rev. E Vol. 77 2008)
+	Universality class of fiber bundles with string heterogeneities (Europhysics Lettes Vol. 81 2008)
+	Crackling noise in non-destructive material testing (ACTA PHYSICA DEBRECIENSIS XLI 2007)
+	Fragment masses and velocities in impact (ACTA PHYSICA ET CHIMICA DEBRECINA 2006)
+	Fragment masses and velocities in impact (MMM2006) (conf. proceedings)
+
+Irodalmak:
+Scaling and renormalization in Statistical Physics by J. Cardy...	
+
+A fejezeteke strukturaja lehetne:
+
+- motivacio ( mi motivalta a problema vizsgalatat)
+- modell leiras -> a vizsgalt modell
+- par fejezet az egyes vizsgalt ertekekrol stb
+- eredmenyek konklizioja, osszegzes...
+
+Introduction:
+A bevezetot kicsit bovebbre veszem, lesz benne szo hatter, kutats celja, outline... nem rossz otlet
+
+
+Elasztikus deformáció, repedés terjedés
+-stress tensor (feszültség tenzor)
+-mechanikai feszültség \sigma 
+-surface tension (felületi feszültség)
+
+
+Energiák:
+-belső energia, bulk
+-felületi energia, surface
+-szabad energia, Gibbs szabad energia, Entalpia, entropia
+-kinetikus energia
+-potenciális energia
+
+Matematikai fogalmak és kapcsolataik:
+-felületi integráé
+-térfogati integrál
+-Riemann zeta függvény
+
+Vektoralgebrai fogalmak:
+-osszeadas
+-linearis kombinacio
+-skalaris szorzat
+-vektor szorzat
+-vegyes szorzat
+-Divergencia
+-gradiens
+-rotáció
+-Laplace operátor
+-	
+
+Elméleti bevezető:
+
+	Fázisátalakulások elmélete, perkoláció, kritikus exponensek:
+	- Order, illetve control paraméter a fázisátalakulásokban... szemléletes jelentése? extensiv intensiv változó választása rend illetve kontroll paraméternek.
+	- A perkolációnál a klaszterméret eloszlás exponense p_c-nél \tau, ami 2d-ben 187/91, mig 3d-ben 2.18, de mindig 2 es 5/2 kozott van...
+	- a klaszterméret eloszlás függvényeket egymásra lehet skálázni, egy a rendszer paramétereitől, illetve a kontroll és rend paramétertől függő skálafüggvénnyel
+		ami bevezet további nevezetes exponenseket, ami a perkoláció esetében \sigma-ával jelöltek.igy lett $s^{-\tau}R+-((p-p_c)s^\sigma)$, a skálafüggvény 
+		különböző alakot vehet fel p_c alatt és felett...
+	- a klaszterméret második momentumát is érdemes vizsgálni, amit úgy kapunk, hogy 
+	
+	Fazisatalakulasok jellemzese. A dimenzioszam mervado a fazisatalkulasoknal, korlatokat fogalmaz meg a fazisatalakulas miensegere. Belathato, hogy amiennyiben egy fazisatalakulast belatunk d dimenzioban akkor barmely d'>d dimenzióban adott fázisátalakulás teljesül....
+	
+	Fázisátalakulás rendje:
+	1./ Elsőrendű fázisátalakulásról beszélünk amennyiben valamilyen rendszer jellemző szakadást szenved azaz 
+	2./ Másodrendű vagy másdofajú a fázisátalakulás, amennyiben a rendszer jellemzői egy kritikus érték fölött folytonosan simán változnak. A rendszer viselkedése alapvetően megváltozik. Sok eseteben a másodrendű fázisátalakulás bizonyos szimmetriák sérülésével jár és habár a rendszer jellemzői folytonosan változnak az adott szimmetria ugrást szenved. 
+
+
+Numerikus modszerek - molekuláris dinamika....:
+	- Euler modszer minosegerol egy par sor. 
+	- Csonkolasi hiba, kerekitesi hiba, lokalis, globalis hiba
+	- Adott modszer stabilitasa - a kerdes hogy lepesrol lepesre noveli-e a hibat vagy sem
+	- Egy másik módszer a globális hiba becslésére/vizsgálatára: az adott vizsgált rendszer egy olyan változatát szimuláljuk, amiben megmaradó fizikai mennyiségek vannak, például veszünk egy zárt disszipáció mentes rendszert, ebben az esetben az első lépésben kiszámoljuk a rendszer energiáját (belső + mozgási), majd ezt minden lépés után meghatározzuk és kiszámoljuk a négyzetes eltérések összegét, és megvizsgáljuk, hogy ez hogyan viselkedik az idő előrehaladtával...
+ 	
+	
+Elméleti bevezető:
+- termodinamikai potenciál (módszerek, becslése, nem ismert)
+- statisztikus fizika, 
+- hatványfüggvények	
+- hatvangyfuggvenyek es log-normal eloszlasok megkulonboztetese... jelentosege...
+- log normalis eloszlas a kis meretkenek nagy valseget ad mig a nagy mereteknek kicsit, es habar hosszu farka
+- Zipf like distribution??? kulonbseg a sima powerlawtal (elvileg az, hogy Zipf-nel a power law a rank orderingbol (rang rendezes) szarmazik...
+- hatvanyfuggveny eloszlasu mertekek eseten nincsen relevans hosszusag skala... (no relevant length scale)
+- !!! lsd nature cikk (illetve referencia Crow, E. L & Shimizu, K. Lognormal Distributions: Theory and Applications (Dekker, New York, 1988).) Amennyiben weboldalak egy halmazat azonos mertekben (rataval) hagyjuk novekedni figyelembe veve random flukotaciokat, akkor kelloen hosszu ido utan az oldalak meret log-normalis eloszlast fog kovetni (ami nemm hatvanyfuggveny) -> erdekes dolog, hogy ha  nem konstans mertekben hanem valamilyen eloszlas szerinti (tobb fajta is) a novekedes merteke a weboldalaknak, akkor hatvanyfuggveny eloszlasu lesz a weboldalak mereteloszlasa, tovabba 
+- kritikus exponensek a fázisátalakulás elméletében...
+- korrelációs távolság correlation length
+- skálatörvények
+- fázisátalakulás legalább hogy mi az az elsőfajú és másodfajú átalakulás...	
+- analógia a törések fázisátalakulás, perkoláció, perkolációs exponensek között... 
+- törés irreverzibilis folyamat, repedés terjedés lokális tulajdonságok okozzák (ellentmondás a folyadék olvadásával ahol a rendszerben véletlenszerűen előforduló hatások eredménye...)
+- perkoláció, fázisátalakulás repedés terjedés, perkoláció elmélete...
+- probléma perkoláció átlagtérközelítés,
+- perkoláció analógia fázisatalakulással, ezért a termodinamikai potenciál ismerete nélkül is becsülhetőek a fázisátalakulás kritikus exponensei. 
+- diszkrét elem módszer (végeselemes módszer, molekuláris dinamika)
+- finite size effect (a rendszer méretének a hatása az eredményekre)
+
+Fázisátalakulás, renormalizáció
+- order parameter (1 v. több, a lokális fluktoációik vizsgálatával a fázisátalakulás természetét jellemezhetjük)
+- kritikus exponenesek és skála dimenziók (scaling dimensions)
+- első-, másodfajú fázisátalakulás
+- 
+
+Fragmentációs szimuláció:
+- A doktori munka iránya 
+
+Kollaboráció:
+Raul, Pagonabarraga, Ferenc, Hans, HAnsjoerg Sebold, Halasz Zoltan, Kocsis Gergely,
+	
+Szálkötegmodell: 
+A következőket kell leírnom róla:
+- Az eredete, először mire használták
+- Daniels munkája
+- A modell alapelemei. Száraz szálkötegmodell. 
+- terhelés eloszlás, weibull, uniform
+- deformáció kontrollált, terhelés kontrollált kísérlet
+- terhelés kontrollált eset GLS,LLS (dinamika, perkolációs lokális)
+- constitutive görbe, állapotfüggvény
+- a modell dinamikája,
+- a modell kiterjesztései
+- saját kiterjesztés
+- Modell motivációja:  (egyrészt fogalmam sincs róla, másrészt meg...)
+-- nagy rendezetlenségű rendzserek vizsgálata, példák ilyen mechanikai rendszerekre. Esetleg más interpretáció kompozitok, mátrix anyag továbbá a kompozit szálak jelentős mértékű eltérés, hasonló modellek a miénkhez... mekeresni azokat az indiai cikkeket amik a miénkhez igen hasonlatosak... talán a cikkek referencialistájában benne vannak.
+- log normális eloszlás és annak a fizikai jelentése...
+
+A legujabb struktura a kovetkezo:
+A bevezető részben leírom hogy hogyan találkoztam a számítógépes fizikával, statisztikus fizikával,Kun Feri, Kiss Lajos, Vertse, stb. A szamitogepes fizika, illetve az interdiszcipolinaritás, egyeb interdiszciplinaris tudomanyok, az informatika a holnap matematikája. 
+Szamitogepes fizika pozitivuma, hogy olyan doldgokba enged betekintést amiben kísérteli módon nem lehetne, vagy...
+
+A dolgozat strukturája: szemikronológiai sorrend
+
+Elméleti bevezető:
+- fragmentacio
+- Fázisátalakulások hatványfüggvények, kritikus jelenségek, univerzalitás
+- molekuláris dinamika
+-  rácsmodellek... ???
+
+MD alapú eredmények
+- vékony üvegréteg lövedék
+- dinamikus törés
+
+
+Ha az egyenlet jobb oldalán több definició van:
+
+\begin{equation}
+	f(x)=
+	\begin{cases} 
+		\frac{x}{b-a}, & \mbox{ ha } x<a,\\
+		\frac{x^2}{b-a}, & \mbox{ minden más esetben}
+	\end{cases}
+\end{equation}
+
+FA,Geri,Zoli:
+
+Fazekas A szerint az altalanos blabalt tartalmazo szoveg ami nem szerves resze a dolgozatnak az eloszo kategoriaba sorolando es mint olyan nem sorszamozando fejezet. Tekintve először is Zoli dolgozatát ezzel nem igazán tudok egyet érteni, de 
+
+A dolgozat legujabb strukturaja:
+
+A motivacional ket reszre kell osztani. CSi
+
+Tehát a struktúra: 
+1. előszó, köszönetnyilvánítás
+
+2. Bevezetés
+Egy kis blabla arról, hogy milyen fontos az amit csinálunk, és milyen érdekes és a dolgozatomban ezt vizsgáltam meg, és hogy ezek alapján a dolgozat két fejezetre osztható szimulációs technikák alapján
+
+3. Elméleti bevezető
+	- törés modellezési lehetőségei és szimulációs technikák
+	-- szálköteg modellek
+	-- diszkrét elem módszer, molekuláris dinamika
+	
+
+3. Fragmentációs folyamatok vizsgálata molekuláris dinamikával
+	- motiváció
+	- a modell
+	- előzetes eredmények
+	- implementációs kérdések szimulációs technikák
+	- itt simán követem a cikk struktúráját kicsit több ábrával..
+4. REndezetlen anyagok vizsgálata rács szimulációval
+	- motiváció, legalább 2-3 oldal
+	- a modell a módosításunk
+	- GLS a két cikk stílusát követve, meg az előadásomét kicsit több ábrával
+	- LLS ugyanaz mint fent.
+
+5. Továbblépési lehetőségek
+
+6. Következtetések
+
+---------------------------------
+
+Latex: ha csillag van a section subsection stb. után akkor az nem lesz számozva...
+
+
+\end{verbatim}
+
+\chapter{Munkafüzetek 2007-2011}
+
+\section{MD}
+
+A doktori munkám elején molekuláris szimulációk vizsgálatával foglalkoztam, amely munkát a módszerek elsajátításával illetve a rendelkezésre álló 2D-s modell megismerésével és megértésével kezdtem.
+
+Kezdeti lépésként elvégeztem a szimulációs program verifikációját, a standard tesztekkel, úgy mint adott  fizikai paraméterek mellett mérhetünk bizonyos jellemzőket, amelyeket az elmélet által jósolt értékekkel validálhatjuk a modellünket és a szimulációs kódunkat, továbbá elvégeztük az egyes megmaradási törvények helyességét úgy mint disszipációs elemek kikapcsolása mellett a rendszerben érvényes az energiamegmaradás törvénye. továbbá mindezek mellett meg lehet még vizsgálni, hogy az impulzus illetve perdületmegmaradás is teljesül-e a szimulációs kód keretein belül. Ezeket az alap teszteket minden hasonló kód esetén érdemes elvégezni, hogy a rendszerben ismeretlen, ellenőrizetlen forrásból ne kerüljön energia.
+
+Miután a disszipáció, törés is bekapcsolásra kerül a rendszerben érdemes megvizsgálni, hogy a rendszer teljes energiája monoton csökkenő függvényt követ-e, ezzel előre kiszűrve annak lehetőségét, hogy valamilyen numerikus hiba miatt a rendszerbe energia táplálódjon, ezzel eltorzítva az eredményeket.
+
+A vizsgált probléma a fragmentáció tágabb témakörébe tartozik, itt is mint a legtöbb eseteben érdemes valamilyen klasszikus eredmény generálása a szimulációs kódunknak. Ebben az esetben a fragmentáció jellemző mennyiségeit mint a fragmensek méreteloszlását vizsgáltuk és azokat az irodalommal egyezőnek találtuk.
+
+
+
+\subsection{Ring - robbantásos kísérlet}
+
+Egy gyűrű szerű tárgyat próbáltunk itt felrobbantani. Növelve a robbantás energiáját megpróbáltuk meghatározni azt a kritikus energia értéket amikor a test átkerül a sérült fázisból a fragmentált fázisba.
+
+A kritikus energiát a következő módon határozhatjuk meg. Ábrázolnunk kell a rendszer adott jellemzőjét a kritikus ponttól mért távolság függvényében, ebben az esetben a befektett energia függvényében. Az lesz a kritikus pont, ahol a leghosszabb a hatványfüggvény 
+
+	
+\subsection{Kadono kísérletes munka}
+
+
+Egy vízszintes üveglapba a lap síkjával párhuzamosan egy lövedéket lövünk és megfigyeljük, hogy milyen hatással lesz ez a céltárgy fragmentációjára. A szimulációs kísérletben a lövedék sebességét változtattuk akár csak a valódi kísérletekben. 
+
+A kísérlet során nyilván tartjuk az egyes fragmensek tömegét, sebességét, ábrázoljuk a sebességeloszlásokat annak függvényében, hogy a fragmens az épp testben hol helyezkedett el. 
+	
+\subsubsection{Ábrázolt mennyiségek}
+$S$:
+
+\section{Latex things}
+
+Ide összegyütjök menetközben pár latex dolgot ha belefutok és éppen még nincs használatban:
+
+\begin{itemize}
+\item Na ez elvileg szépen az egymás alatti egyenletek jobb szélét összefogja... De jó is ez :)
+\begin{align}
+F = f_1+f_2+f_3+...+f_n
+\intertext{can be written as}
+\sum_1^n{f_i}
+\end{align}
+\item
+
+\end{itemize}

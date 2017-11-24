@@ -1,0 +1,217 @@
+This file was created with Bibkeeper.
+
+@ARTICLE{astrom_branching_1997,
+  author = {Astr\"om, J and Timonen, J.},
+  title = {Fragmentation by crack branching},
+  journal = {Phys. Rev. E},
+  year = {1997},
+  volume = {78},
+  number = {19},
+  pages = {3677},
+}
+
+@ARTICLE{astrom2004phys,
+  author = {Astr\"om, J. A. and Linna, R. P. and Timonen, J. and M\"oller,
+	P. F. and Oddershede, L.},
+  title = {Exponential and power-law mass distributions in brittle fragmentation },
+  journal = {Phys. Rev. E},
+  year = {2004},
+  volume = {70},
+  pages = {026104 },
+}
+
+@ARTICLE{astrom_dynfrag_2004,
+  author = {Astr\"om, J. A. and Ouchterlony, F. and Linna, R. P. and Timonen, J.},
+  title = {Universal Dynamic Fragmentation in D Dimensions },
+  journal = {Phys. Rev. Lett.},
+  year = {2004},
+  volume = {92},
+  pages = {245506},
+}
+
+@ARTICLE{debris_nasa_1997_1,
+  author = {Belk, C. A. and et al.},
+  title = {Meteoroids and Orbital Debris: Effects on Spacecraft},
+  journal = {NASA Reference Publication 1408},
+  year = {1997},
+}
+
+@ARTICLE{debris_nasa_1997,
+  author = {Belk, C. A. and Robinson, J.-H. and Alexander, M. B. and Cooke,
+	W. J. and Pavelitz, S. D.},
+  title = {Meteoroids and Orbital Debris: Effects on Spacecraft},
+  journal = {NASA Reference Publication 1408},
+  year = {1997},
+}
+
+@ARTICLE{marder_physrep_1999,
+  author = {Fineberg, J. and Marder, M},
+  title = {Instability in dynamic fracture},
+  journal = {Physics Reports},
+  year = {1999},
+  volume = {313},
+  pages = {1-108},
+}
+
+@ARTICLE{gonzalo_1995,
+  author = {Hern\'andez, G. and Herrmann, H. J.},
+  title = {Discrete models for two- and three-dimensional fragmentation },
+  journal = {Physica A},
+  year = {1995},
+  volume = {215},
+  pages = {420-430},
+}
+
+@ARTICLE{nasa_model_2001,
+  author = {Johnson, N. and Krisko, P. and Liou, J.-C. and Anz-Meador, P.},
+  title = {NASA's new breakup model of EVOLVE 4.0},
+  journal = {Adv. Space Res. },
+  year = {2001},
+  volume = {28},
+  number = {9},
+  pages = {1377-1384},
+}
+
+@BOOK{nasa_satellite,
+  title = {History of on-orbit satellite fragmentations},
+  publisher = {Tech. Rep., NASA Lyndon B. Johson Space Center},
+  year = {2004},
+  author = {Johnson, N. and Whitlock, P. and Anz-Meador, P. and Cizek, M and
+	Portman, S},
+}
+
+@BOOK{nasa_satellite_1,
+  title = {History of on-orbit satellite fragmentations},
+  publisher = {Tech. Rep., NASA Lyndon B. Johson Space Center},
+  year = {2004},
+  author = {Johnson, N. at al.},
+}
+
+@ARTICLE{satel_collide,
+  author = {Jonhson D.},
+  title = {Accidental collisions of cataloged satellites Identified},
+  journal = {Orbital debris quaterly news},
+  year = {2005},
+  volume = {9},
+  pages = {1-3},
+}
+
+@ARTICLE{glassplate_kadono_1997,
+  author = {Kadono, T.},
+  title = {Fragment Mass Distribution of Platelike Objects},
+  journal = {Phys. Rev. Lett.},
+  year = {1997},
+  volume = {78},
+  pages = {1444-1447},
+}
+
+@ARTICLE{glass_kadono_2002,
+  author = {Kadono, T. and Arakawa, M.},
+  title = { Crack propagation in thin glass plates caused by high velocity impact},
+  journal = {Phys. Rev. E},
+  year = {2002},
+  volume = {65},
+  pages = {035107},
+}
+
+@ARTICLE{kadono_glassimpact_2005,
+  author = {Kadono, T. and Arakawa, M. and Mitani, N. K.},
+  title = {Fragment velocity distribution in the impact disruption of thin
+	glass plates},
+  journal = {Phys. Rev. E},
+  year = {2005},
+  volume = {72},
+  pages = {045106},
+  note = {(R)},
+  url = {nautilus:/home/koko/Munka/Articles/Phys.Rev.E/kadono_glassimpact_2005.pdf},
+}
+
+@ARTICLE{katsuragi_2003,
+  author = {Katsuragi, H. and Sugino, D. and Honjo, H},
+  title = {Scaling of impact fragmentation near the critical point},
+  journal = {Phys. Rev. E},
+  year = {2003},
+  volume = {68},
+  pages = {046105},
+}
+
+@ARTICLE{kun_transition_1999,
+  author = {Kun, F. and Herrmann, H. J.},
+  title = {Transition from damage to fragmentation in collision of solids},
+  journal = {Phys. Rev. E},
+  year = {1999},
+  volume = {59},
+  pages = {2623},
+}
+
+@PHDTHESIS{linna_thesis,
+  author = {Linna R.},
+  title = {Dynamic Aspects in Brittle Fragmentation},
+  school = {Department of Physics, University of Jyv\"askyl\"a},
+  year = {2004},
+}
+
+@INPROCEEDINGS{egg_icf11,
+  author = {MacLeod, N. and Bain, N. N. and Solomon, S. E. and Hancock, J. W},
+  title = {Failure mechanisms of hens' eggs},
+  booktitle = {Proceedings of the International Conference on Fracture 11},
+  year = {2005},
+  editor = {A. Carpinteri},
+}
+
+@ARTICLE{turcotte_1986,
+  author = {Turcotte, D. L.},
+  title = {Factals and Fragmentation},
+  journal = {J. of Geophys. Res.},
+  year = {1986},
+  volume = {91},
+  pages = {1921},
+}
+
+@ARTICLE{shell_exp_imp,
+  author = {Wittel, F. K. and Kun, F. and Herrmann, H. J. and Kr\"oplin, B.-H.},
+  title = {Breakup of shells under explosion and impact},
+  journal = {Phys. Rev. E},
+  year = {2005},
+  volume = {71},
+  pages = {016108},
+}
+
+@ARTICLE{shell_prl,
+  author = {Wittel, F. K. and Kun, F. and Herrmann, H. J. and Kr\"oplin, B.-H.},
+  title = {Fragmentation of shells},
+  journal = {Phys. Rev. Lett.},
+  year = {2004},
+  volume = {93},
+  pages = {035504},
+}
+
+@UNPUBLISHED{wittel_unpub,
+  author = {Wittel, F. K. and Kun, F. and Herrmann, H. J. and Kr\"oplin, B.-H.
+	and Maloy, K. J.},
+  title = {Dynamics of cracking of shells},
+  note = {unpublished},
+  year = {2005},
+}
+
+@ARTICLE{glass_instab_1997,
+  author = {Yuse, A and Sano, M},
+  title = {Instabilities of quasi-static crack patterns in quenched glass plates},
+  journal = {Physica D},
+  year = {1997},
+  volume = {108},
+  pages = {365-378},
+}
+
+@ARTICLE{glass_crack_nature,
+  author = {Yuse, A. and Sano, M.},
+  title = {Transition between crack patterns in quenched glass plates},
+  journal = {Nature},
+  year = {1993},
+  volume = {362},
+  number = {6418},
+  pages = {329-331},
+}
+
+@comment{bibkeeper-meta: groups:}
+
