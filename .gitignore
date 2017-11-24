@@ -3,7 +3,7 @@
 /0_ignore
 /*
 !/*.tex
-!/*.pdf
+/*.pdf
 !/chapters
 !/references
 !/*.sty
