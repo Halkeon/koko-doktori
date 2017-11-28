@@ -1,0 +1,32 @@
+% This file was created with JabRef 2.9.2.
+% Encoding: Cp1252
+
+@BOOK{thsp1_chakrabarti1997,
+  title = {Statistical Physics of Fracture and Breakdown in Disordered Systems},
+  publisher = {Clarendon Press, Oxford},
+  year = {1997},
+  author = {B. K. Chakrabarti and L. G. Benguigui},
+  owner = {Kornel},
+  timestamp = {2017.11.24}
+}
+
+@ARTICLE{thsp1_alava2006,
+  author = {M. J. Alava, P. K. V. V. Nukala, and S. Zapperi},
+  title = {Szerintem en ezt tudom, csak meg kell majd keresni},
+  journal = {Advanced Physics},
+  year = {2006},
+  volume = {55},
+  pages = {349},
+  owner = {Kornel},
+  timestamp = {2017.11.24}
+}
+
+@BOOK{thsp1_herrmann1990,
+  title = {Statistical Models for the Fracture of Disordered Media},
+  publisher = {Elsevier Science, North Holland},
+  year = {1990},
+  editor = {H. J. Herrmann and S. Roux},
+  owner = {Kornel},
+  timestamp = {2017.11.24}
+}
+
